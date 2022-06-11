@@ -19,7 +19,6 @@ window.addEventListener( 'load' , () => {
             longitude = position.coords.longitude;
             const base = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${api}&units=metric`
             
-            console.log(base)
             // Fetching the base data and converting to json format
             fetch(base).then((response) => {
                 return response.json()
